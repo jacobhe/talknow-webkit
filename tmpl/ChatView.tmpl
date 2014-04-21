@@ -1,0 +1,31 @@
+﻿<script id="tmpl-ChatView" type="text/x-handlebars-template">
+  <div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div>
+        <img src="{{image}}" class="img-circle img-head"/>
+        {{givenName}}
+      </div>
+      <hr/>
+
+      <div class="chat-messages">
+        
+      </div>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 chat">
+      <div class="row">
+        <div class="col-md-10">
+          <textarea class="chat-input"></textarea>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary btn-lg"> Send </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script id="tmpl-ChatMessage" type="text/x-handlebars-template">
+  <p>
+    {{sender}} - {{timestamp}} : {{message}}
+  </p>
+</script>

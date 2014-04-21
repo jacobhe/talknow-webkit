@@ -1,0 +1,17 @@
+<script id="tmpl-RosterView" type="text/x-handlebars-template">
+    <ul class="nav nav-sidebar">
+
+    </ul>
+</script>
+
+<script id="tmpl-RosterList" type="text/x-handlebars-template">
+  {{#each rosters}}
+  <li class="{{active}}">
+    <a href="#" data-entity="Roster" data-entity-id="{{contact}}">
+      <span class="badge pull-right">{{unreadCount}}</span>
+      <img src="{{image}}" class="img-circle img-head"/>
+      {{givenName}}
+    </a>
+  </li>
+  {{/each}}
+</script>
